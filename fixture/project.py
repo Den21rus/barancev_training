@@ -17,3 +17,9 @@ class ProjectHelper():
     def open_home_page(self):
         wd = self.app.wd
         wd.get("https://github.com/login")
+
+    def deleted_first_group(self):
+        wd = self.app.wd
+        # Открываем окно с проектами
+        wd.get("https://github.com/")
+

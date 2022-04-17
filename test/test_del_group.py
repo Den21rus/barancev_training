@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
 from model.group import Group
 
-
-def test_case(app):
+def test_delete_first_group(app):
     app.session.login(Group(username="Den21rus", password="Htc777@pux"))
-    app.project.open_project_page()
+    app.project.deleted_first_group()
     app.session.logout()
