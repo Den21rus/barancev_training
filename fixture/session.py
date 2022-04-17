@@ -6,7 +6,7 @@ class SessionHelper:
 
     def login(self, group):
         wd = self.app.wd
-        self.app.open_home_page()
+        self.app.project.open_home_page()
         wd.find_element_by_id("login_field").click()
         wd.find_element_by_id("login_field").clear()
         wd.find_element_by_id("login_field").send_keys(group.username)

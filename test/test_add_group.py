@@ -13,5 +13,5 @@ def app(request):
 
 def test_untitled_test_case(app):
     app.session.login(Group(username="Den21rus", password="Htc777@pux"))
-    app.open_project_page()
+    app.project.open_project_page()
     app.session.logout()
